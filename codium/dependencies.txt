@@ -1,0 +1,14 @@
+On Host:
+	python3-pip
+	pipx
+	gcc
+	clang-tools-extra
+	
+In Codium:
+	Better Makefile
+	Black Formatter
+	clangd
+	GitLens
+	Python
+	Python Debugger
+	Python Environments
