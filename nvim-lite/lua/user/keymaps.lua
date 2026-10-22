@@ -8,9 +8,17 @@ vim.keymap.set({ 'n' }, '<A-j>', '<C-w>j')
 vim.keymap.set({ 'n' }, '<A-k>', '<C-w>k')
 vim.keymap.set({ 'n' }, '<A-l>', '<C-w>l')
 
+-- Map tab generation
+vim.keymap.set({ 'n' }, '<leader>nt', '<cmd>tabnew<CR>')
+vim.keymap.set({ "n" }, '<leader>ct', '<cmd>tabclose<CR>')
+vim.keymap.set({ "n" }, '<leader>ot', '<cmd>tabonly<CR>')
+
+-- theprimeagen keymaps
+vim.keymap.set({ "x" }, "<leader>p", [["_dP]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
+
 -- Recommended keymaps for telescope.nvim
 local builtin = require('telescope.builtin')
-
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
@@ -28,3 +36,4 @@ vim.api.nvim_create_autocmd("FileType", {
         vim.keymap.set("n", "q", "<cmd>qa<CR>", { buffer = ev.buf })
     end,
 })
+

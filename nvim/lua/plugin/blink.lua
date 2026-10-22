@@ -13,8 +13,8 @@ blink.setup({
 
         ["<Tab>"] = { "select_next", "fallback" },
         ["<S-Tab>"] = { "select_prev", "fallback" },
-        ["<CR>"] = { "accept", "fallback" },
-        ["<C-y>"] = {},
+        ["<CR>"] = { "fallback" },
+        ["<C-y>"] = { "accept" },
     },
 
     enabled = function()

@@ -25,7 +25,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
         map("gd", builtin.lsp_definitions, "Definition")
         map("gr", builtin.lsp_references, "References")
         map("gi", builtin.lsp_implementations, "Implementation")
-        map("gt", builtin.lsp_type_definitions, "Type Definition")
+        -- map("gt", builtin.lsp_type_definitions, "Type Definition")
         map("gD", vim.lsp.buf.declaration, "Declaration")
         map("K", vim.lsp.buf.hover, "Hover")
 
