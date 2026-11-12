@@ -1,10 +1,21 @@
--- vim.lsp setup
+-- Lingua Franca setup
 vim.filetype.add({
     extension = {
         lf = 'lf',
     },
 })
 
+vim.lsp.config('lf', {
+    cmd = {
+        'java',
+        '-jar',
+        vim.fn.expand('$HOME/.local/share/nvim/lf-lsp/lsp-0.13.0-all.jar'),
+    },
+    filetypes = { 'lf' },
+    root_markers = { '.git' },
+})
+
+-- Lua setup
 vim.lsp.config('lua_ls', {
     settings = {
         Lua = {
@@ -12,6 +23,16 @@ vim.lsp.config('lua_ls', {
                 globals = { 'vim' },
             },
         },
+    },
+})
+
+-- clangd setup
+vim.lsp.config('clangd', {
+    filetypes = {
+        'c',
+        'cpp',
+        'objc',
+        'objcpp',
     },
 })
 
