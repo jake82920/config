@@ -1,7 +1,12 @@
-print("jake acquired")
+print('jake tactically acquired')
 
-require("user.globals")
-require("plugin.install")
-require("user.keymaps")
-require("user.markdown")
-require("user.theme")
+require('globals')
+require('plugins')
+require('keymaps')
+require('theme')
+
+
+
+
+
+

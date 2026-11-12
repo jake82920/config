@@ -1,4 +1,4 @@
-# NEOVIM LITE SETUP GUIDE
+# NEOVIM SETUP GUIDE
 
 Beyond this directory, NVIM requires:
 - ripgrep and fd-find
