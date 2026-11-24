@@ -33,4 +33,4 @@ vim.api.nvim_set_hl(0, 'LineNr', { fg = '#5f875f', bg = 'NONE' })
 vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = '#00ff00', bold = true })
 vim.api.nvim_set_hl(0, 'StatusLine', { bg = 'none' })
 vim.api.nvim_set_hl(0, 'StatusLineNC', { bg = 'none' })
-
+vim.api.nvim_set_hl(0, 'CursorLine', { bg = '#242424' })

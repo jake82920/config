@@ -14,7 +14,7 @@ vim.keymap.set('n', '<leader>ct', '<cmd>tabclose<CR>')
 vim.keymap.set('n', '<leader>ot', '<cmd>tabonly<CR>')
 
 -- theprimeagen keymaps
-vim.keymap.set('x', '<leader>p', [["_dP]])
+vim.keymap.set('v', '<leader>p', [["_dP]])
 vim.keymap.set({ 'n', 'v' }, '<leader>d', [["_d]])
 
 -- Recommended keymaps for telescope

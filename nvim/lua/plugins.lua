@@ -5,6 +5,7 @@ vim.pack.add({
     { src = "https://github.com/nvim-neo-tree/neo-tree.nvim" },
     { src = "https://github.com/MunifTanjim/nui.nvim" },
     { src = "https://github.com/neovim/nvim-lspconfig" },
+    { src = "https://github.com/lervag/vimtex" },
 })
 
 require('telescope').setup({
@@ -35,6 +36,7 @@ require('neo-tree').setup({
             ['h'] = 'close_node',
             ['L'] = 'set_root',
             ['l'] = 'open',
+            ['t'] = 'open_tabnew',
         },
     },
     use_popups_for_input = false,

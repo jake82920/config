@@ -33,10 +33,11 @@ vim.lsp.config('clangd', {
         'cpp',
         'objc',
         'objcpp',
+        'cuda',
     },
 })
 
-vim.lsp.enable({ 'lua_ls', 'clangd', 'lf' })
+vim.lsp.enable({ 'lua_ls', 'clangd', 'lf', 'texlab' })
 vim.diagnostic.config({ virtual_text = true })
 vim.keymap.set('n', '<leader>lf', vim.lsp.buf.format)
 

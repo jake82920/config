@@ -5,13 +5,22 @@ Beyond this directory, NVIM requires:
     - clangd
     - lf
     - lua-language-server
+    - texlab
+- LaTeX toolchain
+    - latexmk
+    - vim-latex
+    - texlive
+    - and any other desired packages
 - ripgrep and fd-find
 
 ## TROUBLESHOOTING
 
 ### NVIM needs to be version >= 0.12
 
-Just ask chat for the repo
+If not included in default repositories:
+- download neovim tarball from github
+- extract to /opt/nvim
+- use `ln -s` to create a symlink from the nvim binary onto path
 
 ### Checking package status
 
